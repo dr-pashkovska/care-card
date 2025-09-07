@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "biomejs.biome",
+    "bradlc.vscode-tailwindcss",
+    "streetsidesoftware.code-spell-checker",
+    "dzhavat.bracket-pair-toggler",
+    "shardulm94.trailing-spaces"
+  ]
+}

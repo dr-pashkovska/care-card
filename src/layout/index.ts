@@ -1,0 +1,8 @@
+export { Footer } from './footer'
+export { AboutMe } from './sections/about-me'
+export { ConsultationTypes } from './sections/consultation-types'
+export { Differences } from './sections/differences'
+export { Hero } from './sections/hero'
+export { OurProcess } from './sections/our-process'
+export { Results } from './sections/results'
+export { WhyOnline } from './sections/why-online'
