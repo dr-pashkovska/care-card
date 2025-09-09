@@ -1,10 +1,55 @@
-import type { FC } from 'react'
+/** biome-ignore-all lint/suspicious/noArrayIndexKey: explanation */
+import type { FC, ReactNode } from 'react'
+
+import { SectionHeader } from '~/components/section-header'
+
+import { Section } from './section'
 
 export const Differences: FC = () => {
   return (
-    <section>
-      <h1>Differences</h1>
-      <p>Descr Differences</p>
-    </section>
+    <Section>
+      <SectionHeader title="Порівняння пакетів" />
+
+      <div className="relative overflow-x-auto">
+        <table className="w-full text-sm text-left rtl:text-right text-gray-500">
+          <thead className="text-xs text-gray-700 uppercase bg-orange-100">
+            <tr>
+              {HEADERS.map((item) => (
+                <th key={item} scope="col" className="px-6 py-3">
+                  {item}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>{[PACK_1, PACK_2, PACK_3].map(makeRow)}</tbody>
+        </table>
+      </div>
+    </Section>
   )
 }
+
+const makeRow: MakeRow = (items) => {
+  return (
+    <tr className="border-b border-gray-200">
+      {items.map((item, key) =>
+        !key ? (
+          <th key={key} scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+            {item}
+          </th>
+        ) : (
+          <td key={key} className="px-6 py-4">
+            {item}
+          </td>
+        )
+      )}
+    </tr>
+  )
+}
+
+const HEADERS = ['Пакет', 'Файл-протокол', 'Час на запитання', "Зв'язок", 'Тривалість']
+
+const PACK_1 = ['Без супроводу (50 €)', '+', '3 дні', 'за потреби', '-']
+const PACK_2 = ['3 місяці (100 €)', '+', 'увесь період', '1–2 рази/тиждень', '3 місяці']
+const PACK_3 = ['Рік (250 €)', '+', 'увесь період', '1–2 рази/тиждень', '12 місяців']
+
+type MakeRow = (items: string[], index: number, array: string[][]) => ReactNode

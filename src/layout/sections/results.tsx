@@ -1,10 +1,14 @@
 import type { FC } from 'react'
 
+import { SectionHeader } from '~/components/section-header'
+
+import { Section } from './section'
+
 export const Results: FC = () => {
   return (
-    <section>
-      <h1>Results</h1>
-      <p>Descr Results</p>
-    </section>
+    <Section>
+      <SectionHeader title="Результати моїх пацієнтів" />
+      IMAGES HERE
+    </Section>
   )
 }

@@ -14,11 +14,11 @@ if (rootElement) {
         <Hero />
         <main>
           <AboutMe />
-          <Differences />
-          <ConsultationTypes />
-          <OurProcess />
           <WhyOnline />
+          <OurProcess />
+          <ConsultationTypes />
           <Results />
+          <Differences />
         </main>
         <Footer />
       </div>
