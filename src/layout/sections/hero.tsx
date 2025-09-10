@@ -12,7 +12,7 @@ export const Hero: FC = () => {
         <img
           // src="/hero-test.png"
           // src="/hero.jpeg"
-          src="/hero2.webp"
+          src="/care-card/hero2.webp"
           className="max-h-full block absolute top-0 bottom-0 z-10 left-1/2 -translate-x-1/2"
           alt="Єлизавета Пашковська"
         />
