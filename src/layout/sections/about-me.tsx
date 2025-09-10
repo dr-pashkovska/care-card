@@ -9,7 +9,7 @@ export const AboutMe: FC = () => {
     <Section>
       <SectionHeader title="Про мене" />
 
-      <div className="text-lg text-slate-700 flex flex-col gap-2">
+      <div className="text-lg text-slate-700 flex flex-col gap-2 border p-6 border-teal-600/40 rounded-md shadow-md bg-white/40">
         <p>
           Я Єлизавета Пашковська, лікар-дерматолог і косметолог. Уже понад 7 років я допомагаю людям вирішувати проблеми
           зі шкірою та знаходити свій шлях до її здоров’я й краси. За цей час більше ніж 2500 пацієнтів довірили мені

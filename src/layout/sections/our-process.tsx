@@ -1,4 +1,5 @@
-import type { FC } from 'react'
+import cn from 'classnames'
+import type { FC, PropsWithChildren } from 'react'
 
 import { SectionHeader } from '~/components/section-header'
 
@@ -9,13 +10,30 @@ export const OurProcess: FC = () => {
     <Section>
       <SectionHeader title="Як ми працюємо" />
 
-      <ul className="text-lg text-slate-700 flex flex-col gap-2">
-        <li>- Ви залишаєте заявку.</li>
-        <li>- Я надсилаю анкету у Telegram.</li>
-        <li>- Ви заповнюєте її та надсилаєте фото/відео шкіри.</li>
-        <li>- Я аналізую ваші засоби, стан шкіри та складаю персональний файл-протокол.</li>
-        <li>- Супровід починається з моменту, як ви отримуєте файл і всі рекомендації.</li>
+      <ul className={cn(['text-lg text-slate-700 flex flex-col gap-6'])}>
+        <Block stepNumber={1}>Ви залишаєте заявку.</Block>
+        <Block stepNumber={2}>Я надсилаю анкету у Telegram.</Block>
+        <Block stepNumber={3}>Ви заповнюєте її та надсилаєте фото/відео шкіри.</Block>
+        <Block stepNumber={4}>Я аналізую ваші засоби, стан шкіри та складаю персональний файл-протокол.</Block>
+        <Block stepNumber={5}>Супровід починається з моменту, як ви отримуєте файл і всі рекомендації.</Block>
       </ul>
     </Section>
+  )
+}
+
+const Block: FC<PropsWithChildren & { stepNumber: number }> = ({ stepNumber, children }) => {
+  return (
+    <li>
+      <div
+        className={cn([
+          'float-start mr-4 w-10 h-10',
+          'flex-shrink-0 flex items-center justify-center rounded-full',
+          'bg-teal-600/70 text-white font-semibold italic shadow-lg',
+        ])}
+      >
+        {stepNumber}
+      </div>
+      <p className="text-gray-700 text-lg">{children}</p>
+    </li>
   )
 }
