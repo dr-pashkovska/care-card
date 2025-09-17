@@ -15,7 +15,8 @@
   "dependencies": {
     "classnames": "^2.5.1",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "react-image-gallery": "^1.4.0"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.2.3",
@@ -23,6 +24,7 @@
     "@types/node": "^24.3.0",
     "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7",
+    "@types/react-image-gallery": "^1.2.4",
     "@vitejs/plugin-react": "^5.0.0",
     "tailwindcss": "^4.1.12",
     "typescript": "~5.8.3",

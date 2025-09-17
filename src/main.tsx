@@ -1,7 +1,17 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 
-import { AboutMe, ConsultationTypes, Differences, Footer, Hero, OurProcess, Results, WhyOnline } from '~/layout'
+import {
+  AboutMe,
+  ConsultationTypes,
+  Differences,
+  Feedback,
+  Footer,
+  Hero,
+  OurProcess,
+  Results,
+  WhyOnline,
+} from '~/layout'
 
 import './index.css'
 
@@ -19,6 +29,7 @@ if (rootElement) {
           <ConsultationTypes />
           <Results />
           <Differences />
+          <Feedback />
         </main>
         <Footer />
       </div>

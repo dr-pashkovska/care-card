@@ -10,13 +10,21 @@ export const OurProcess: FC = () => {
     <Section>
       <SectionHeader title="Як ми працюємо" />
 
-      <ul className={cn(['text-lg text-slate-700 flex flex-col gap-6'])}>
-        <Block stepNumber={1}>Ви залишаєте заявку.</Block>
-        <Block stepNumber={2}>Я надсилаю анкету у Telegram.</Block>
-        <Block stepNumber={3}>Ви заповнюєте її та надсилаєте фото/відео шкіри.</Block>
-        <Block stepNumber={4}>Я аналізую ваші засоби, стан шкіри та складаю персональний файл-протокол.</Block>
-        <Block stepNumber={5}>Супровід починається з моменту, як ви отримуєте файл і всі рекомендації.</Block>
-      </ul>
+      <div className="border p-6 border-teal-600/40 rounded-md shadow-md bg-white/40 flex gap-4">
+        <ul className={cn(['text-lg text-slate-700 flex flex-col gap-6'])}>
+          <Block stepNumber={1}>Ви залишаєте заявку.</Block>
+          <Block stepNumber={2}>Я надсилаю анкету у Telegram.</Block>
+          <Block stepNumber={3}>Ви заповнюєте її та надсилаєте фото/відео шкіри.</Block>
+          <Block stepNumber={4}>Я аналізую ваші засоби, стан шкіри та складаю персональний файл-протокол.</Block>
+          <Block stepNumber={5}>Супровід починається з моменту, як ви отримуєте файл і всі рекомендації.</Block>
+        </ul>
+
+        <img
+          src="/care-card/img-4.jpg"
+          alt="Як ми працюємо"
+          className={cn(['max-h-96 rounded-md', 'hidden sm:block'])}
+        />
+      </div>
     </Section>
   )
 }

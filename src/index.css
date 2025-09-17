@@ -18,3 +18,26 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+.image-gallery-icon {
+  @apply text-teal-600/70;
+  filter: none;
+}
+
+.image-gallery-icon:hover,
+.image-gallery-icon:focus {
+  @apply text-teal-600/90;
+  @apply outline-0;
+}
+
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  max-height: 35rem;
+}
+
+.image-gallery-content.fullscreen .image-gallery-slide .image-gallery-image {
+  max-height: calc(100dvh - 80px);
+}
+
+.image-gallery-svg {
+  @apply !h-16;
+}

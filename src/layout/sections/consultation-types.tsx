@@ -46,7 +46,7 @@ const Block: FC<{ title: ReactNode; list: (ReactNode | string)[]; price: number;
         {list.map((item, key) => (
           <li key={key} className="flex gap-3 pb-3">
             <div className="py-1.5">
-              <span className="block rounded-full p-1.5 bg-teal-500" />
+              <span className="block rounded-full p-1.5 bg-[#d7acaa]" />
             </div>
             <span className="text-base text-slate-700">{item}</span>
           </li>

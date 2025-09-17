@@ -1,3 +1,4 @@
+export { Check } from './check'
 export { FileLines } from './file-lines'
 export { HourglassHalf } from './hourglass-half'
 export { Mobile } from './mobile'
