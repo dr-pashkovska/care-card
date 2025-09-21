@@ -12,7 +12,7 @@ export const AboutMe: FC = () => {
 
       <div className="border p-4 sm:p-6 border-teal-600/40 rounded-md shadow-md bg-white/40">
         <img
-          src="/care-card/img-1.jpg"
+          src="/care-card/img-1.webp"
           alt="Про мене"
           className={cn(['max-h-96 rounded-md mx-auto mb-4', 'float-none', 'block', 'sm:mb-0 sm:mr-4 sm:float-left'])}
           loading="lazy"

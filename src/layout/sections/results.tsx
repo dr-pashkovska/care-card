@@ -32,4 +32,4 @@ const images = [
   ['11_1', '11_2'],
 ]
   .flat()
-  .map((i) => ({ original: `/care-card/result/${i}.jpg`, originalAlt: `Result ${i}` }))
+  .map((i) => ({ original: `/care-card/result/${i}.webp`, originalAlt: `Result ${i}` }))

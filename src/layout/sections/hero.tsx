@@ -10,7 +10,7 @@ export const Hero: FC = () => {
     <Section fullHeight>
       <div className="relative mx-auto w-full grow">
         <img
-          src="/care-card/hero-2.png"
+          src="/care-card/hero.webp"
           className={cn(['max-h-full min-h-80 block absolute top-0 bottom-0 z-10 left-1/2 -translate-x-1/2'])}
           alt="Єлизавета Пашковська"
           loading="lazy"

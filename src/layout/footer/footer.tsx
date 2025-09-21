@@ -10,7 +10,7 @@ export const Footer: FC = () => {
         <div className="border p-4 sm:p-6 border-teal-600/40 rounded-md shadow-md bg-white/40 flex gap-4 items-center flex-col sm:flex-row">
           <div className="hidden sm:block">
             <img
-              src="/care-card/img-2.jpg"
+              src="/care-card/img-2.webp"
               alt="Готові отримати зрозумілий план догляду?"
               className={cn(['max-h-96 max-w-68 rounded-md', 'mx-auto mb-4 sm:mb-0'])}
               loading="lazy"
@@ -21,7 +21,7 @@ export const Footer: FC = () => {
             <p className="text-center text-gray-700 text-lg">Готові отримати зрозумілий план догляду?</p>
             <div className="block sm:hidden">
               <img
-                src="/care-card/img-2.jpg"
+                src="/care-card/img-2.webp"
                 alt="Готові отримати зрозумілий план догляду?"
                 className={cn(['max-h-96 max-w-68 rounded-md m-auto'])}
                 loading="lazy"

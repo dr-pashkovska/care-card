@@ -21,7 +21,7 @@ export const OurProcess: FC = () => {
 
         <div>
           <img
-            src="/care-card/img-4.jpg"
+            src="/care-card/img-4.webp"
             alt="Як ми працюємо"
             className={cn(['max-h-96 rounded-md', 'mx-auto mb-4 sm:mb-0'])}
             loading="lazy"
