@@ -44,6 +44,7 @@ export const Footer: FC = () => {
                 'rounded-lg border-none',
                 'focus:outline-none',
                 'sm:max-w-2/3 w-full mx-auto',
+                'text-center',
               ])}
             >
               Записатися на консультацію

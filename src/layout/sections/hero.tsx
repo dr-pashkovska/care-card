@@ -41,6 +41,7 @@ export const Hero: FC = () => {
             'sm:text-2xl text-lg font-normal',
             'rounded-lg border-none',
             'focus:outline-none',
+            'text-center',
           ])}
         >
           Записатися на консультацію
