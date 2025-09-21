@@ -11,7 +11,7 @@ export const Differences: FC = () => {
     <Section>
       <SectionHeader title="Порівняння пакетів" />
 
-      <div className="border p-6 border-teal-600/40 rounded-md shadow-md bg-white/40">
+      <div className="border p-4 sm:p-6 border-teal-600/40 rounded-md shadow-md bg-white/40">
         <div className="relative overflow-x-auto">
           <table className="w-full text-sm text-left rtl:text-right text-gray-500">
             <thead className="text-xs text-gray-700 uppercase bg-teal-600/70">

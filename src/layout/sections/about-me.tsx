@@ -10,11 +10,12 @@ export const AboutMe: FC = () => {
     <Section>
       <SectionHeader title="Про мене" />
 
-      <div className="border p-6 border-teal-600/40 rounded-md shadow-md bg-white/40">
+      <div className="border p-4 sm:p-6 border-teal-600/40 rounded-md shadow-md bg-white/40">
         <img
           src="/care-card/img-1.jpg"
           alt="Про мене"
-          className={cn(['max-h-96 rounded-md mr-4', 'float-left', 'hidden sm:block'])}
+          className={cn(['max-h-96 rounded-md mx-auto mb-4', 'float-none', 'block', 'sm:mb-0 sm:mr-4 sm:float-left'])}
+          loading="lazy"
         />
 
         <div className="text-lg text-slate-700 [&>p]:not-last:mb-4">

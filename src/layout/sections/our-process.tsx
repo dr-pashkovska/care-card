@@ -10,7 +10,7 @@ export const OurProcess: FC = () => {
     <Section>
       <SectionHeader title="Як ми працюємо" />
 
-      <div className="border p-6 border-teal-600/40 rounded-md shadow-md bg-white/40 flex gap-4">
+      <div className="border p-4 sm:p-6 border-teal-600/40 rounded-md shadow-md bg-white/40 flex gap-4 flex-col-reverse sm:flex-row">
         <ul className={cn(['text-lg text-slate-700 flex flex-col gap-6'])}>
           <Block stepNumber={1}>Ви залишаєте заявку.</Block>
           <Block stepNumber={2}>Я надсилаю анкету у Telegram.</Block>
@@ -19,11 +19,14 @@ export const OurProcess: FC = () => {
           <Block stepNumber={5}>Супровід починається з моменту, як ви отримуєте файл і всі рекомендації.</Block>
         </ul>
 
-        <img
-          src="/care-card/img-4.jpg"
-          alt="Як ми працюємо"
-          className={cn(['max-h-96 rounded-md', 'hidden sm:block'])}
-        />
+        <div>
+          <img
+            src="/care-card/img-4.jpg"
+            alt="Як ми працюємо"
+            className={cn(['max-h-96 rounded-md', 'mx-auto mb-4 sm:mb-0'])}
+            loading="lazy"
+          />
+        </div>
       </div>
     </Section>
   )

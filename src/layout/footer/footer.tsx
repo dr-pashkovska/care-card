@@ -7,21 +7,34 @@ export const Footer: FC = () => {
   return (
     <footer>
       <Section>
-        <div className="border p-6 border-teal-600/40 rounded-md shadow-md bg-white/40 flex gap-4 items-center">
-          <img
-            src="/care-card/img-2.jpg"
-            alt="Готові отримати зрозумілий план догляду?"
-            className={cn(['max-h-96 max-w-68 rounded-md', 'hidden sm:block'])}
-          />
+        <div className="border p-4 sm:p-6 border-teal-600/40 rounded-md shadow-md bg-white/40 flex gap-4 items-center flex-col sm:flex-row">
+          <div className="hidden sm:block">
+            <img
+              src="/care-card/img-2.jpg"
+              alt="Готові отримати зрозумілий план догляду?"
+              className={cn(['max-h-96 max-w-68 rounded-md', 'mx-auto mb-4 sm:mb-0'])}
+              loading="lazy"
+            />
+          </div>
 
           <div className="flex gap-4 flex-col justify-evenly">
             <p className="text-center text-gray-700 text-lg">Готові отримати зрозумілий план догляду?</p>
+            <div className="block sm:hidden">
+              <img
+                src="/care-card/img-2.jpg"
+                alt="Готові отримати зрозумілий план догляду?"
+                className={cn(['max-h-96 max-w-68 rounded-md m-auto'])}
+                loading="lazy"
+              />
+            </div>
             <p className="text-center text-gray-700 text-lg mb-8">
               Ніяких хаотичних покупок, лише чітка система, яка працює саме для вас.
             </p>
 
-            <button
-              type="button"
+            <a
+              href="https://t.me/Yelyzaveta_Pashkovska"
+              rel="noopener noreferrer"
+              target="_blank"
               className={cn([
                 'transition-all cursor-pointer shadow-md hover:shadow-lg',
                 'py-3 px-5',
@@ -34,7 +47,7 @@ export const Footer: FC = () => {
               ])}
             >
               Записатися на консультацію
-            </button>
+            </a>
           </div>
         </div>
       </Section>

@@ -11,7 +11,7 @@ export const Results: FC = () => {
   return (
     <Section>
       <SectionHeader title="Результати моїх пацієнтів" />
-      <div className="border p-6 border-teal-600/40 rounded-md shadow-md bg-white/40">
+      <div className="border p-4 sm:p-6 border-teal-600/40 rounded-md shadow-md bg-white/40">
         <ImageGallery infinite lazyLoad showThumbnails={false} showPlayButton={false} autoPlay items={images} />
       </div>
     </Section>
@@ -32,4 +32,4 @@ const images = [
   ['11_1', '11_2'],
 ]
   .flat()
-  .map((i) => ({ original: `/care-card/result/${i}.jpg` }))
+  .map((i) => ({ original: `/care-card/result/${i}.jpg`, originalAlt: `Result ${i}` }))
