@@ -9,7 +9,7 @@ export const Feedback: FC = () => {
     <Section>
       <SectionHeader title="Що кажуть мої пацієнти" />
 
-      <div className="border p-4 sm:p-6 border-teal-600/40 rounded-md shadow-md bg-white/40">
+      <div className="border p-4 sm:p-6 border-brand-green-dark rounded-md shadow-md">
         <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
           {[1, 2, 5, 4, 6, 3, 8, 9, 10, 7].map((name) => (
             <Block key={name} src={`/care-card/feedback/${name}.jpg`} />
@@ -26,7 +26,7 @@ const Block: FC<{ src: string }> = ({ src }) => {
       <img
         src={src}
         alt="Відгук"
-        className="w-full max-w-96 h-auto shadow-lg rounded-md border border-gray-200"
+        className="w-full max-w-96 h-auto shadow-lg rounded-md border border-brand-green-light"
         loading="lazy"
       />
     </div>

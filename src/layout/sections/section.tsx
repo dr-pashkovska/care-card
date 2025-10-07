@@ -5,7 +5,7 @@ export const Section: FC<Props> = ({ className, fullHeight = false, children }) 
   return (
     <section className={cn({ 'min-h-dvh': fullHeight })}>
       <div
-        className={cn(['flex flex-col gap-3', 'p-4 container m-auto relative max-w-4xl', className], {
+        className={cn(['flex flex-col gap-3', 'p-4 container m-auto relative max-w-4xl bg-brand-cream', className], {
           'min-h-dvh': fullHeight,
         })}
       >

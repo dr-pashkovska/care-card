@@ -1,8 +1,16 @@
 @import "tailwindcss";
 
+@theme {
+  --color-brand-text-dark: rgb(49 49 39);
+  --color-brand-text-light: rgb(159 162 143);
+  --color-brand-green-dark: rgb(43 58 17);
+  --color-brand-green-light: rgb(152 154 133);
+  --color-brand-cream: rgb(254 251 246);
+}
+
 html,
 body {
-  @apply bg-orange-50/30;
+  @apply bg-brand-green-dark;
 }
 
 .family-roboto {
@@ -22,13 +30,13 @@ body {
 }
 
 .image-gallery-icon {
-  @apply text-teal-600/70;
+  @apply text-brand-text-dark;
   filter: none;
 }
 
 .image-gallery-icon:hover,
 .image-gallery-icon:focus {
-  @apply text-teal-600/90;
+  @apply text-brand-text-dark;
   @apply outline-0;
 }
 

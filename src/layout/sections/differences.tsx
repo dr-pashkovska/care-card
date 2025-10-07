@@ -11,10 +11,10 @@ export const Differences: FC = () => {
     <Section>
       <SectionHeader title="Порівняння пакетів" />
 
-      <div className="border p-4 sm:p-6 border-teal-600/40 rounded-md shadow-md bg-white/40">
+      <div className="border p-4 sm:p-6 border-brand-green-dark rounded-md shadow-md">
         <div className="relative overflow-x-auto">
-          <table className="w-full text-sm text-left rtl:text-right text-gray-500">
-            <thead className="text-xs text-gray-700 uppercase bg-teal-600/70">
+          <table className="w-full text-sm text-left rtl:text-right text-brand-text-dark">
+            <thead className="text-xs uppercase bg-brand-green-light">
               <tr>
                 {HEADERS.map((item) => (
                   <th key={item} scope="col" className="px-6 py-3 text-white">
@@ -33,10 +33,10 @@ export const Differences: FC = () => {
 
 const makeRow: MakeRow = (items, key) => {
   return (
-    <tr className="border-b border-gray-200" key={key}>
+    <tr className="border-b border-brand-green-light/60" key={key}>
       {items.map((item, key) =>
         !key ? (
-          <th key={key} scope="row" className="px-6 py-4 font-semibold text-gray-600 whitespace-nowrap">
+          <th key={key} scope="row" className="px-6 py-4 font-semibold text-brand-text-dark whitespace-nowrap">
             {item}
           </th>
         ) : (
@@ -51,7 +51,7 @@ const makeRow: MakeRow = (items, key) => {
 
 const CheckCell: FC = () => (
   <div className="flex items-center justify-center w-full">
-    <Check width="1.5rem" height="1.5rem" className="text-[#d7acaa]" />
+    <Check width="1.5rem" height="1.5rem" className="text-brand-green-light" />
   </div>
 )
 

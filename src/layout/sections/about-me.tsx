@@ -10,7 +10,7 @@ export const AboutMe: FC = () => {
     <Section>
       <SectionHeader title="Про мене" />
 
-      <div className="border p-4 sm:p-6 border-teal-600/40 rounded-md shadow-md bg-white/40">
+      <div className="border p-4 sm:p-6 border-brand-green-dark rounded-md shadow-md">
         <img
           src="/care-card/img-1.webp"
           alt="Про мене"
@@ -18,7 +18,7 @@ export const AboutMe: FC = () => {
           loading="lazy"
         />
 
-        <div className="text-lg text-slate-700 [&>p]:not-last:mb-4">
+        <div className="text-lg text-brand-text-dark [&>p]:not-last:mb-4">
           <p>
             Я Єлизавета Пашковська, лікар-дерматолог і косметолог. Уже понад 7 років я допомагаю людям вирішувати
             проблеми зі шкірою та знаходити свій шлях до її здоров’я й краси. За цей час більше ніж 2500 пацієнтів

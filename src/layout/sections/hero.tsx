@@ -18,12 +18,12 @@ export const Hero: FC = () => {
         <Badge text="Єлизавета Пашковська" className="absolute left-0 bottom-2 text-nowrap z-20" />
       </div>
 
-      <h1 className="flex flex-col uppercase justify-center family-playfair !italic text-slate-600 text-wrap z-20">
+      <h1 className="flex flex-col uppercase justify-center family-playfair !italic text-brand-text-dark text-wrap z-20">
         <span className="md:text-7xl sm:text-6xl text-5xl text-center">Лікар-дерматолог</span>
         <span className="md:text-6xl sm:text-5xl text-4xl text-center">і косметолог</span>
       </h1>
 
-      <p className="italic font-light text-md text-slate-600 text-center py-4 z-20">
+      <p className="italic font-light text-md text-brand-text-light text-center py-4 z-20">
         Ваш персональний супровід у догляді та лікуванні шкіри
         <span className="ml-1.5 font-semibold">онлайн</span>
       </p>
@@ -36,7 +36,7 @@ export const Hero: FC = () => {
           className={cn([
             'transition-all cursor-pointer shadow-md',
             'sm:py-4 sm:px-8 py-3 px-5',
-            'bg-[#d7acaa] hover:bg-[#d7acaa]/90',
+            'bg-brand-green-dark/60 hover:bg-brand-green-dark',
             'text-white',
             'sm:text-2xl text-lg font-normal',
             'rounded-lg border-none',

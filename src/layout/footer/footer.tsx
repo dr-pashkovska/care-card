@@ -7,7 +7,7 @@ export const Footer: FC = () => {
   return (
     <footer>
       <Section>
-        <div className="border p-4 sm:p-6 border-teal-600/40 rounded-md shadow-md bg-white/40 flex gap-4 items-center flex-col sm:flex-row">
+        <div className="border p-4 sm:p-6 border-brand-green-dark rounded-md shadow-md flex gap-4 items-center flex-col sm:flex-row">
           <div className="hidden sm:block">
             <img
               src="/care-card/img-2.webp"
@@ -18,7 +18,9 @@ export const Footer: FC = () => {
           </div>
 
           <div className="flex gap-4 flex-col justify-evenly">
-            <p className="text-center text-gray-700 text-lg">Готові отримати зрозумілий план догляду?</p>
+            <p className="text-center text-brand-text-dark text-lg font-semibold">
+              Готові отримати зрозумілий план догляду?
+            </p>
             <div className="block sm:hidden">
               <img
                 src="/care-card/img-2.webp"
@@ -27,7 +29,7 @@ export const Footer: FC = () => {
                 loading="lazy"
               />
             </div>
-            <p className="text-center text-gray-700 text-lg mb-8">
+            <p className="text-center text-brand-text-dark text-lg mb-8">
               Ніяких хаотичних покупок, лише чітка система, яка працює саме для вас.
             </p>
 
@@ -38,7 +40,7 @@ export const Footer: FC = () => {
               className={cn([
                 'transition-all cursor-pointer shadow-md hover:shadow-lg',
                 'py-3 px-5',
-                'bg-[#d7acaa] hover:bg-[#d7acaa]/90',
+                'bg-brand-green-dark/60 hover:bg-brand-green-dark',
                 'text-white',
                 'sm:text-xl text-lg font-normal',
                 'rounded-lg border-none',

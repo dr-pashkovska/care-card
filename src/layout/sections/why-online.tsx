@@ -11,8 +11,8 @@ export const WhyOnline: FC = () => {
     <Section>
       <SectionHeader title="Чому онлайн-консультація зручніша за кабінет?" />
 
-      <div className='flex gap-2 justify-evenly items-center'>
-        <div className="border p-2 border-teal-600/40 rounded-md shadow-md bg-white/40">
+      <div className="flex gap-2 justify-evenly items-center">
+        <div className="border p-2 border-brand-green-dark rounded-md shadow-md">
           <img
             src="/care-card/example/img-1.webp"
             alt="Audio"
@@ -21,7 +21,7 @@ export const WhyOnline: FC = () => {
           />
         </div>
 
-        <div className="border p-2 border-teal-600/40 rounded-md shadow-md bg-white/40">
+        <div className="border p-2 border-brand-green-dark rounded-md shadow-md">
           <img
             src="/care-card/example/img-2.webp"
             alt="TextFile"
@@ -31,23 +31,25 @@ export const WhyOnline: FC = () => {
         </div>
       </div>
 
-      <ul className="text-lg text-slate-700 flex flex-col gap-4">
-        <Block icon={<FileLines className='max-h-10 max-w-10 sm:max-h-16 sm:max-w-16' height="4rem" width="4rem" />}>
+      <ul className="text-lg text-brand-text-dark flex flex-col gap-4">
+        <Block icon={<FileLines className="max-h-10 max-w-10 sm:max-h-16 sm:max-w-16" height="4rem" width="4rem" />}>
           Ви отримуєте <span className="ml-1.5 font-semibold">зрозумілий файл із протоколом</span> — з прикладами
           засобів (до 3 варіантів на позицію), чіткою схемою застосування та рекомендаціями від мене в аудіо-форматі, а
           не «швидкі поради» під час візиту.
         </Block>
 
-        <Block icon={<HourglassHalf className='max-h-10 max-w-10 sm:max-h-16 sm:max-w-16' height="4rem" width="4rem" />}>
+        <Block
+          icon={<HourglassHalf className="max-h-10 max-w-10 sm:max-h-16 sm:max-w-16" height="4rem" width="4rem" />}
+        >
           Є час спокійно все обдумати, перечитати й задати питання у межах обраного пакету.
         </Block>
 
-        <Block icon={<Question className='max-h-10 max-w-10 sm:max-h-16 sm:max-w-16' height="4rem" width="4rem" />}>
+        <Block icon={<Question className="max-h-10 max-w-10 sm:max-h-16 sm:max-w-16" height="4rem" width="4rem" />}>
           Всі питання зазвичай виникають <b>після виходу з кабінету лікаря</b>— тут у вас є можливість поставити їх у
           Telegram.
         </Block>
 
-        <Block icon={<Mobile className='max-h-10 max-w-10 sm:max-h-16 sm:max-w-16' height="4rem" width="4rem" />}>
+        <Block icon={<Mobile className="max-h-10 max-w-10 sm:max-h-16 sm:max-w-16" height="4rem" width="4rem" />}>
           Гнучкий формат: не потрібно підлаштовуватись під графік, усе відбувається у зручному для вас режимі.
         </Block>
       </ul>
@@ -59,9 +61,9 @@ const Block: FC<PropsWithChildren & { icon: ReactNode }> = ({ children, icon }) 
   return (
     <li
       className={cn([
-        'border border-teal-600/40 rounded-md p-4',
-        'text-slate-700 bg-white/40 shadow-md',
-        '[&>svg]:text-teal-600 [&>svg]:float-start sm:[&>svg]:mr-4 [&>svg]:mr-2',
+        'border border-brand-green-dark rounded-md p-4',
+        'text-brand-green-dark shadow-md',
+        '[&>svg]:text-brand-text-dark [&>svg]:float-start sm:[&>svg]:mr-4 [&>svg]:mr-2',
       ])}
     >
       {icon}

@@ -11,7 +11,7 @@ export const Results: FC = () => {
   return (
     <Section>
       <SectionHeader title="Результати моїх пацієнтів" />
-      <div className="border p-4 sm:p-6 border-teal-600/40 rounded-md shadow-md bg-white/40">
+      <div className="border p-4 sm:p-6 border-brand-green-dark rounded-md shadow-md">
         <ImageGallery infinite lazyLoad showThumbnails={false} showPlayButton={false} autoPlay items={images} />
       </div>
     </Section>

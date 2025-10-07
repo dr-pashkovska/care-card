@@ -33,22 +33,22 @@ const Block: FC<{ title: ReactNode; list: (ReactNode | string)[]; price: number;
   return (
     <li
       className={cn([
-        'border border-teal-600/40 rounded-md p-4',
-        'text-slate-700 bg-white/40 shadow-md',
+        'border border-brand-green-dark rounded-md p-4',
+        'text-brand-text-dark shadow-md',
         'flex flex-col gap-4',
       ])}
     >
-      <span className="text-5xl font-bold text-center text-teal-600">{price} €</span>
-      <h4 className="text-xl text-center">{title}</h4>
-      <div className="border-b border-b-slate-200 w-1/3 mx-auto" />
-      {description && <span className="text-sm text-slate-500 leading-4">{description}</span>}
+      <span className="text-5xl font-bold text-center text-brand-text-dark">{price} €</span>
+      <h4 className="text-xl text-center text-brand-text-dark">{title}</h4>
+      <div className="border-b border-b-brand-green-light w-1/3 mx-auto" />
+      {description && <span className="text-sm text-brand-text-light leading-4">{description}</span>}
       <ul>
         {list.map((item, key) => (
           <li key={key} className="flex gap-3 pb-3">
             <div className="py-1.5">
-              <span className="block rounded-full p-1.5 bg-[#d7acaa]" />
+              <span className="block rounded-full p-1.5 bg-brand-green-light" />
             </div>
-            <span className="text-base text-slate-700">{item}</span>
+            <span className="text-base text-brand-text-dark">{item}</span>
           </li>
         ))}
       </ul>
